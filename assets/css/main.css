@@ -3164,16 +3164,7 @@ input, select, textarea {
 				line-height: inherit;
 			}
 
-		.pagination .previous:before {
-			content: '\f104';
-			margin-right: 0.9375em;
-		}
-
-		.pagination .next:before {
-			content: '\f105';
-			float: right;
-			margin-left: 0.9375em;
-		}
+		
 
 		@media screen and (max-width: 980px) {
 
@@ -3215,6 +3206,113 @@ input, select, textarea {
 		}
 
 	.pagination span {
+		color: #eeeeee;
+	}
+
+
+
+	.pagination1 {
+		display: -moz-inline-flex;
+		display: -webkit-inline-flex;
+		display: -ms-inline-flex;
+		display: inline-flex;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: default;
+		list-style: none;
+		margin: 0 0 2rem 2px;
+		padding: 0;
+	}
+
+		.pagination1 a, .pagination1 span {
+			-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+			border: solid 2px;
+			display: inline-block;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 0.8rem;
+			font-weight: 900;
+			height: 3rem;
+			letter-spacing: 0.075em;
+			line-height: calc(3rem - 4px);
+			margin-left: -2px;
+			min-width: 3rem;
+			position: relative;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.pagination1 .next, .pagination1 .previous {
+			text-decoration: none;
+			padding: 0 1.75rem;
+		}
+
+			.pagination1 .next:before, .pagination1 .previous:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+			}
+
+			.pagination1 .next:before, .pagination1 .previous:before {
+				display: inline-block;
+				color: inherit !important;
+				line-height: inherit;
+			}
+
+		
+
+		@media screen and (max-width: 980px) {
+
+			.pagination1 a, .pagination1 span {
+				font-size: 0.9rem;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.pagination1 .page, .pagination1 .extra {
+				display: none;
+			}
+
+		}
+
+	.pagination1 a, .pagination1 span {
+		border-color: #eeeeee;
+	}
+
+	.pagination1 a {
+		color: #212931 !important;
+	}
+
+		.pagination1 a:hover {
+			color: #18bfef !important;
+			border-color: #18bfef;
+			z-index: 1;
+		}
+
+			.pagination1 a:hover + a,
+			.pagination1 a:hover + span {
+				border-left-color: #18bfef;
+			}
+
+		.pagination1 a.active {
+			background-color: #eeeeee;
+		}
+
+	.pagination1 span {
 		color: #eeeeee;
 	}
 
