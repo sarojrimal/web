@@ -90,6 +90,29 @@ input, select, textarea {
 
 	}
 
+	.airbnb-image {
+		max-width: 1000px; /* Adjust the value as needed */
+		max-height: 2000px; /* Adjust the value as needed */
+	  }
+	  
+	.airbnb-image1 {
+		max-width: 1200px;
+		max-height: 2000px;
+		margin-top: 0px;
+	}
+
+	.airbnb-2-image {
+		max-width: 2000px; /* Adjust the value as needed */
+		max-height: 2000px; /* Adjust the value as needed */
+	  }	  
+	.airbnb-2-image1 {
+		max-width: 1200px;
+		max-height: 2000px;
+		margin-top: 0px;
+	}
+
+
+
 	html {
 		box-sizing: border-box;
 	}
@@ -3732,7 +3755,7 @@ input, select, textarea {
 	
 
 		#nav ul.divided li {
-			border-top-color: #ffffff;
+			border-top-color: #010a0c;
 		}
 
 		#nav ul.icons li a.icon:hover:before {
